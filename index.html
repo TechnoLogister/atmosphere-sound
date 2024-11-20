@@ -78,6 +78,31 @@
       border-radius: 50%;
       box-shadow: -3px -3px 0 0 rgba(0, 0, 0, 0.3);
     }
+        @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .row {
+        flex-direction: column; /* Выстраиваем блоки в колонку */
+        align-items: center;
+      }
+
+      .sound-block {
+        width: 100%; /* Растягиваем на всю ширину */
+        margin-bottom: 20px;
+      }
+
+      .sound-block img {
+        width: 60px;
+        height: 60px; /* Уменьшаем размеры картинок */
+      }
+    }
   </style>
 </head>
 <body>
