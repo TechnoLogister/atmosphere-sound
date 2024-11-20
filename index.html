@@ -179,7 +179,7 @@
       </div>
     </div>
 
-        <!-- Четвёртый ряд звуков -->
+        <!-- Пятый ряд звуков -->
         <div class="row">
           <div class="sound-block">
             <img src="images/fugu.png" alt="Дождь" class="image">
@@ -202,6 +202,29 @@
             <audio id="harry" src="sounds/harry.mp3" loop></audio>
           </div>
         </div>
+                <!-- Шестой ряд звуков -->
+              <div class="row">
+                <div class="sound-block">
+                  <img src="images/avengers.png" alt="Дождь" class="image">
+                  <p class="volume-level" id="avengers-volume">0</p>
+                  <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider" oninput="setVolume('avengers', this.value)">
+                  <audio id="avengers" src="sounds/avengers.mp3" loop></audio>
+                </div>
+            
+                <div class="sound-block">
+                  <img src="images/pirate.png" alt="Птицы" class="image">
+                  <p class="volume-level" id="pirate-volume">0</p>
+                  <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider" oninput="setVolume('pirate', this.value)">
+                  <audio id="pirate" src="sounds/pirate.mp3" loop></audio>
+                </div>
+            
+                <div class="sound-block">
+                  <img src="images/starwars.png" alt="Гроза" class="image">
+                  <p class="volume-level" id="starwars-volume">0</p>
+                  <input type="range" min="0" max="1" step="0.01" value="0" class="volume-slider" oninput="setVolume('starwars', this.value)">
+                  <audio id="starwars" src="sounds/starwars.mp3" loop></audio>
+                </div>
+              </div>
 
   <script>
     function setVolume(soundId, volume) {
