@@ -89,12 +89,15 @@
       }
 
       .row {
+        flex-wrap: wrap; /* Распределение элементов при нехватке места */
+        gap: 10px; /* Уменьшенные отступы */
         flex-direction: column; /* Выстраиваем блоки в колонку */
         align-items: center;
       }
 
       .sound-block {
         width: 100%; /* Растягиваем на всю ширину */
+        max-width: 300px; /* Ограничение максимальной ширины */
         margin-bottom: 20px;
       }
 
